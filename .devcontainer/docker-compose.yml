@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/app:cached
+      - /mnt/e/AI_ComfyUI:/app/resources
+
+volumes:
+  models_data:
+    external: true
+
+

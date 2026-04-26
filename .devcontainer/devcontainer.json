@@ -1,0 +1,64 @@
+{
+    "name": "devcontainer",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/app",
+    "postCreateCommand": "",
+    "postStartCommand": "zsh .devcontainer/start.sh",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2.5.4": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "mounts": [
+        "source=${env:HOME}/.ollama,target=/root/.ollama,type=bind"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.colorTheme": "Visual Studio Dark",
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "/bin/zsh"
+                    }
+                },
+                "editor.wordWrap": "on"
+            },
+            "extensions": [
+                // --
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "naumovs.color-highlight",
+                "mechatroner.rainbow-csv",
+                "christian-kohler.path-intellisense",
+                "kisstkondoros.vscode-gutter-preview",
+                //--
+                "usernamehw.errorlens",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "shd101wyy.markdown-preview-enhanced",
+                "ms-python.python",
+                "ms-python.debugpy",
+                //--
+                // "saoudrizwan.claude-dev"
+                "anthropic.claude-code"
+            ]
+        },
+        "settings": {
+            "workbench.colorTheme": "Default Dark Modern",
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "material-icon-theme.enableLogging": true
+            // "continue.logging": "debug"
+        }
+    },
+    "forwardPorts": [
+        3000
+    ],
+    "hostRequirements": {
+        "gpu": true
+    }
+}

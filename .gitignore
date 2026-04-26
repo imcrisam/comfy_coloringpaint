@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# dotenv
+.env
+.env.*
+.envrc
+
+# Pytest
+.pytest_cache/
+
+# mypy / ruff / linters
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs and temp files
+*.log
+*.tmp
+tmp/
+
+# Generated outputs and heavy directories (models, outputs, audio, video)
+/output/
+output/
+/app/output/
+models/
+models/**
+input/
+input/**
+input_images/
+resources
+
+# Large media or generated artifacts
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+
+# node / JS (if any)
+node_modules/
+
+# Python packaging
+*.egg
+*.egg-info
+
+# local settings
+local_settings.py
+
+# lock files
+poetry.lock
+Pipfile.lock
+
+# Misc
+*.lock
+
+

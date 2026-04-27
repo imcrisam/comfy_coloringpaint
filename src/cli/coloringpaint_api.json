@@ -1,0 +1,449 @@
+{
+  "124": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "125": {
+    "inputs": {
+      "noise": [
+        "127",
+        0
+      ],
+      "guider": [
+        "133",
+        0
+      ],
+      "sampler": [
+        "124",
+        0
+      ],
+      "sigmas": [
+        "134",
+        0
+      ],
+      "latent_image": [
+        "131",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "126": {
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "130",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "127": {
+    "inputs": {
+      "noise_seed": 454676066153745
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "128": {
+    "inputs": {
+      "unet_name": "flux-2-klein-4b-fp8.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "129": {
+    "inputs": {
+      "clip_name": "qwen_3_4b.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "130": {
+    "inputs": {
+      "vae_name": "flux/flux2-vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "131": {
+    "inputs": {
+      "width": [
+        "137",
+        0
+      ],
+      "height": [
+        "137",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "Empty Flux 2 Latent"
+    }
+  },
+  "132": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1,
+      "resolution_steps": 1,
+      "image": [
+        "148",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "ImageScaleToTotalPixels"
+    }
+  },
+  "133": {
+    "inputs": {
+      "cfg": 1,
+      "model": [
+        "128",
+        0
+      ],
+      "positive": [
+        "142",
+        0
+      ],
+      "negative": [
+        "140",
+        0
+      ]
+    },
+    "class_type": "CFGGuider",
+    "_meta": {
+      "title": "CFGGuider"
+    }
+  },
+  "134": {
+    "inputs": {
+      "steps": 4,
+      "width": [
+        "137",
+        0
+      ],
+      "height": [
+        "137",
+        1
+      ]
+    },
+    "class_type": "Flux2Scheduler",
+    "_meta": {
+      "title": "Flux2Scheduler"
+    }
+  },
+  "135": {
+    "inputs": {
+      "text": "Convert this image into a clean coloring book page. Black ink outlines only on a pure white background. No colors, no shading, no gradients, no fills, no gray tones. Bold and clear contour lines, flat and simple illustration style, ready to be colored by hand. Line art only.",
+      "clip": [
+        "129",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "136": {
+    "inputs": {
+      "conditioning": [
+        "135",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "137": {
+    "inputs": {
+      "image": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "Get Image Size"
+    }
+  },
+  "139": {
+    "inputs": {
+      "text": [
+        "154",
+        0
+      ],
+      "clip": [
+        "129",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "140": {
+    "inputs": {
+      "conditioning": [
+        "136",
+        0
+      ],
+      "latent": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "ReferenceLatent"
+    }
+  },
+  "142": {
+    "inputs": {
+      "conditioning": [
+        "135",
+        0
+      ],
+      "latent": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "ReferenceLatent"
+    }
+  },
+  "143": {
+    "inputs": {
+      "noise": [
+        "127",
+        0
+      ],
+      "guider": [
+        "144",
+        0
+      ],
+      "sampler": [
+        "124",
+        0
+      ],
+      "sigmas": [
+        "134",
+        0
+      ],
+      "latent_image": [
+        "131",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "144": {
+    "inputs": {
+      "cfg": 1,
+      "model": [
+        "128",
+        0
+      ],
+      "positive": [
+        "139",
+        0
+      ],
+      "negative": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "CFGGuider",
+    "_meta": {
+      "title": "CFGGuider"
+    }
+  },
+  "146": {
+    "inputs": {
+      "conditioning": [
+        "139",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "148": {
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "batch_size": 1,
+      "color": 0
+    },
+    "class_type": "EmptyImage",
+    "_meta": {
+      "title": "EmptyImage"
+    }
+  },
+  "150": {
+    "inputs": {
+      "samples": [
+        "143",
+        0
+      ],
+      "vae": [
+        "130",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "151": {
+    "inputs": {
+      "value": "A highly detailed isometric illustration of a stylized miniature Kitchen, enclosed within a Centered isometric decorative rounded room frame. The art style is defined by Clean line outlines with Closed shapes (coloring friendly). The perspective is a consistent, high isometric view. All shapes are simple, charming, and detailed with High detail and Hatching line work.\n\nThe walls feature Wood panels. The floor has Herringbone.\n\nIn the center of the room, a Stove. On the left wall, a Open shelf. On the right wall, a Sideboard.\n\nSmall details like Potted plants, Framed pictures, Books, Vases are distributed throughout the scene, following a Many objects arrangement. No watermarks.\n-----\na blonde woman is walking though a weight feild, she is looking thoughtful while walking but happy. The character is a woman a white women with pale skin and blonde hair and blue eyes and multiple braids, She is wearing a vibrant Ukrainian Vyshivanka dress with intricate patterns blue dress, and her lips are painted a striking red. She is holding Wheat Bunch. Behind her, a mindmill is visible in the distance with four blades moving, the whole image has strong summer theme and is outdoors in the country side golden light with a blue sky. The image has a white boarder around it"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "String (Multiline)"
+    }
+  },
+  "154": {
+    "inputs": {
+      "string": [
+        "151",
+        0
+      ],
+      "sep": "-----",
+      "maxsplit": -1
+    },
+    "class_type": "Basic data handling: StringSplitDataList",
+    "_meta": {
+      "title": "split (to data list)"
+    }
+  },
+  "156": {
+    "inputs": {
+      "value": "output/img/1-----output/img/2"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "String (Multiline)"
+    }
+  },
+  "157": {
+    "inputs": {
+      "string": [
+        "156",
+        0
+      ],
+      "sep": "-----",
+      "maxsplit": -1
+    },
+    "class_type": "Basic data handling: StringSplitDataList",
+    "_meta": {
+      "title": "split (to data list)"
+    }
+  },
+  "158": {
+    "inputs": {
+      "string_a": [
+        "157",
+        0
+      ],
+      "string_b": "color"
+    },
+    "class_type": "Basic data handling: StringConcat",
+    "_meta": {
+      "title": "concat"
+    }
+  },
+  "159": {
+    "inputs": {
+      "path": [
+        "158",
+        0
+      ],
+      "format": "png",
+      "quality": 95,
+      "overwrite": true,
+      "image": [
+        "150",
+        0
+      ]
+    },
+    "class_type": "SaveImageToPath",
+    "_meta": {
+      "title": "color"
+    }
+  },
+  "160": {
+    "inputs": {
+      "path": [
+        "157",
+        0
+      ],
+      "format": "png",
+      "quality": 95,
+      "overwrite": true,
+      "image": [
+        "161",
+        0
+      ]
+    },
+    "class_type": "SaveImageToPath",
+    "_meta": {
+      "title": "coloringpaint"
+    }
+  },
+  "161": {
+    "inputs": {
+      "mode": "Grayscale",
+      "dither": "Ninguno",
+      "image": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "ChangeColorDepth",
+    "_meta": {
+      "title": "Change Color Depth"
+    }
+  }
+}

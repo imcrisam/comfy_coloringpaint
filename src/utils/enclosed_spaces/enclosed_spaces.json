@@ -1,0 +1,635 @@
+{
+    "residential": {
+      "House": [
+        "living room", "kitchen", "bathroom", "baby bedroom", "kids bedroom",
+        "teen bedroom", "master bedroom", "basement", "garage", "laundry room",
+        "home office", "game room", "attic", "pantry", "walk-in closet"
+      ],
+      "Mansion": [
+        "main hall", "personal library", "billiard room", "wine cellar",
+        "art gallery", "professional kitchen", "master closet", "private cinema",
+        "trophy room", "private chapel", "music room", "indoor greenhouse"
+      ],
+      "Cabin": [
+        "main room", "kitchen", "bedroom", "enclosed porch", "firewood basement"
+      ],
+      "Studio apartment": [
+        "open plan kitchen-living room", "bathroom"
+      ],
+      "Dollhouse": [
+        "living room", "kitchen", "bedroom", "bathroom"
+      ],
+      "Treehouse": [
+        "main room", "bedroom", "storage"
+      ],
+      "Underground house": [
+        "main room", "kitchen", "bedroom", "entrance tunnel"
+      ],
+      "Houseboat": [
+        "main room", "kitchen", "bedroom", "enclosed deck"
+      ]
+    },
+    "gastronomy": {
+      "Restaurant": [
+        "kitchen", "dining room", "bar", "storage room", "bathroom", "cashier"
+      ],
+      "Fast food restaurant": [
+        "kitchen", "order counter", "dining area", "storage room", "bathroom"
+      ],
+      "Cafe": [
+        "counter", "seating area", "kitchen", "storage room", "bathroom"
+      ],
+      "Bakery": [
+        "oven room", "display counter", "storage room"
+      ],
+      "Pastry shop": [
+        "pastry workshop", "display counter", "storage room"
+      ],
+      "Ice cream shop": [
+        "counter", "seating area", "production room"
+      ],
+      "Bar": [
+        "bar counter", "seating area", "storage room", "bathroom", "kitchen"
+      ],
+      "Wine bar": [
+        "bar counter", "wine cellar", "seating area"
+      ],
+      "Craft distillery": [
+        "production room", "barrel room", "shop"
+      ],
+      "Craft brewery": [
+        "fermentation room", "taproom", "storage room"
+      ],
+      "Sushi bar": [
+        "chef counter", "seating area", "kitchen"
+      ],
+      "Cocktail bar": [
+        "bar counter", "seating area", "storage room"
+      ],
+      "Butcher shop": [
+        "display counter", "cold room", "cutting area"
+      ],
+      "Fish market": [
+        "display counter", "cold room"
+      ],
+      "Tea house": [
+        "tea room", "kitchen", "ceremony room"
+      ],
+      "Irish pub": [
+        "bar counter", "seating area", "storage room", "kitchen"
+      ],
+      "Ramen shop": [
+        "open kitchen", "seating area", "storage room"
+      ],
+      "Taco shop": [
+        "kitchen", "counter", "seating area"
+      ],
+      "Food truck interior": [
+        "kitchen", "serving counter"
+      ],
+      "Chocolate shop": [
+        "production workshop", "display counter", "storage room"
+      ],
+      "Cheese shop": [
+        "aging room", "display counter", "storage room"
+      ]
+    },
+    "retail": {
+      "Supermarket": [
+        "product aisle", "produce section", "dairy section",
+        "storage room", "checkout counter", "bathroom", "cold room"
+      ],
+      "Convenience store": [
+        "counter", "storage room"
+      ],
+      "Pharmacy": [
+        "counter", "storage room", "preparation area"
+      ],
+      "Bookstore": [
+        "main floor", "cashier", "storage room", "reading nook"
+      ],
+      "Toy store": [
+        "main floor", "storage room", "cashier"
+      ],
+      "Flower shop": [
+        "main floor", "cold room", "arrangement workshop"
+      ],
+      "Hardware store": [
+        "main floor", "storage room", "counter"
+      ],
+      "Antique shop": [
+        "main floor", "storage room", "display case"
+      ],
+      "Record store": [
+        "main floor", "listening booth", "cashier"
+      ],
+      "Comic book store": [
+        "main floor", "storage room", "reading nook"
+      ],
+      "Pet store": [
+        "main floor", "animal room", "grooming area", "storage room"
+      ],
+      "Hair salon": [
+        "styling stations", "hair wash area", "reception"
+      ],
+      "Barbershop": [
+        "styling stations", "reception", "storage room"
+      ],
+      "Nail salon": [
+        "main floor", "reception"
+      ],
+      "Tattoo studio": [
+        "work stations", "reception", "storage room"
+      ],
+      "Tailor shop": [
+        "fitting room", "sewing workshop", "reception"
+      ],
+      "Shoe store": [
+        "sales floor", "repair workshop", "storage room"
+      ],
+      "Watch repair shop": [
+        "counter", "workshop"
+      ],
+      "Jewelry store": [
+        "sales floor", "workshop", "safe room"
+      ],
+      "Optical store": [
+        "sales floor", "exam room", "workshop"
+      ],
+      "Laundromat": [
+        "machine room", "counter"
+      ],
+      "Dry cleaner": [
+        "work area", "reception"
+      ],
+      "Locksmith": [
+        "workshop", "counter"
+      ],
+      "Print shop": [
+        "machine room", "reception", "storage room"
+      ],
+      "Musical instrument store": [
+        "main floor", "soundproof testing room", "repair workshop", "storage room"
+      ],
+      "Video game store": [
+        "main floor", "demo area", "cashier"
+      ],
+      "Vintage clothing store": [
+        "main floor", "fitting room", "storage room"
+      ],
+      "Second hand bookstore": [
+        "main floor", "storage room", "reading nook"
+      ],
+      "Herb shop": [
+        "main floor", "mixing lab", "storage room"
+      ],
+      "Esoteric shop": [
+        "main floor", "tarot reading room", "storage room"
+      ],
+      "Plant shop": [
+        "greenhouse sales floor", "storage room", "repotting area"
+      ]
+    },
+    "education_culture": {
+      "Public library": [
+        "reading room", "reception", "archive", "study room",
+        "children section", "book storage"
+      ],
+      "School": [
+        "classroom", "science lab", "computer lab",
+        "library", "bathroom", "teachers lounge", "principal office",
+        "nurse office", "maintenance room", "cafeteria"
+      ],
+      "University": [
+        "lecture hall", "laboratory", "faculty room", "library",
+        "cafeteria", "meeting room", "dean office"
+      ],
+      "Kindergarten": [
+        "playroom", "classroom", "bathroom", "kitchen", "covered playground"
+      ],
+      "Art academy": [
+        "painting studio", "sculpture studio", "gallery", "materials storage"
+      ],
+      "Music academy": [
+        "rehearsal room", "classroom", "recording studio", "storage room"
+      ],
+      "Dance academy": [
+        "rehearsal room", "dressing room", "reception"
+      ],
+      "Museum": [
+        "exhibition hall", "reserve storage", "reception",
+        "restoration workshop", "conference room"
+      ],
+      "Art gallery": [
+        "main hall", "secondary room", "curator office", "storage room"
+      ],
+      "Planetarium": [
+        "projection room", "reception", "exhibition room"
+      ],
+      "Aquarium": [
+        "tank room", "research area", "reception"
+      ],
+      "Cooking school": [
+        "practice kitchen", "theory classroom", "storage room"
+      ],
+      "Historical archive": [
+        "document room", "consultation room", "climate-controlled storage"
+      ],
+      "Observatory": [
+        "telescope room", "computer room", "reception"
+      ]
+    },
+    "health": {
+      "Hospital": [
+        "reception", "waiting room", "patient room",
+        "operating room", "pharmacy", "laboratory", "radiology",
+        "cafeteria", "nursing station", "ICU", "morgue"
+      ],
+      "Veterinary clinic": [
+        "reception", "exam room", "operating room", "kennel room", "storage room"
+      ],
+      "Medical office": [
+        "waiting room", "exam room", "bathroom"
+      ],
+      "Dental office": [
+        "waiting room", "dental chair room", "sterilization room"
+      ],
+      "Psychology office": [
+        "waiting room", "consultation room"
+      ],
+      "Rehabilitation center": [
+        "exercise room", "consultation room", "reception"
+      ],
+      "Clinical laboratory": [
+        "sample collection room", "lab", "reception"
+      ],
+      "Aesthetic clinic": [
+        "reception", "treatment room", "storage room"
+      ],
+      "Dialysis center": [
+        "machine room", "waiting room", "reception"
+      ],
+      "Funeral home": [
+        "visitation room", "preparation room", "office", "storage room"
+      ]
+    },
+    "religious_historical": {
+      "Church": [
+        "main nave", "sacristy", "crypt", "bell tower", "meeting room"
+      ],
+      "Cathedral": [
+        "main nave", "side chapel", "sacristy", "crypt", "tower"
+      ],
+      "Chapel": [
+        "main interior", "sacristy"
+      ],
+      "Monastery": [
+        "monk cell", "scriptorium", "kitchen", "cellar", "prayer room"
+      ],
+      "Synagogue": [
+        "main hall", "library", "meeting room"
+      ],
+      "Mosque": [
+        "prayer hall", "ablution room", "library"
+      ],
+      "Buddhist temple": [
+        "meditation room", "altar room", "covered garden"
+      ],
+      "Castle": [
+        "dungeon", "throne room", "kitchen", "guard tower",
+        "armory", "cellar", "map room", "chapel", "royal bedroom"
+      ],
+      "Medieval fort": [
+        "watchtower", "armory", "kitchen", "barracks", "dungeon"
+      ],
+      "Catacombs": [
+        "main corridor", "burial chamber", "underground chapel"
+      ],
+      "Ruins": [
+        "main hall", "underground room"
+      ],
+      "Mausoleum": [
+        "main chamber", "antechamber"
+      ],
+      "Aztec temple": [
+        "ritual chamber", "treasure room", "ceremonial entrance"
+      ],
+      "Egyptian temple": [
+        "column hall", "burial chamber", "antechamber"
+      ]
+    },
+    "sports_wellness": {
+      "Traditional gym": [
+        "weights room", "cardio room", "locker room", "bathroom", "reception", "storage room"
+      ],
+      "Yoga studio": [
+        "main room", "locker room", "reception"
+      ],
+      "Crossfit box": [
+        "main room", "locker room", "reception"
+      ],
+      "Pilates studio": [
+        "main room", "reception"
+      ],
+      "Meditation studio": [
+        "main room", "reception"
+      ],
+      "Martial arts dojo": [
+        "training room", "locker room", "reception", "storage room"
+      ],
+      "Indoor pool": [
+        "pool area", "locker room", "shower room", "reception"
+      ],
+      "Bowling alley": [
+        "lanes", "shoe room", "bar", "storage room"
+      ],
+      "Fencing hall": [
+        "training room", "armory", "locker room"
+      ],
+      "Boxing gym": [
+        "training room", "locker room", "reception"
+      ],
+      "Spa": [
+        "massage room", "sauna", "jacuzzi room", "reception", "locker room"
+      ],
+      "Sauna": [
+        "steam room", "relaxation room", "locker room"
+      ],
+      "Archery range": [
+        "shooting area", "equipment storage", "reception"
+      ],
+      "Indoor climbing gym": [
+        "wall area", "locker room", "reception"
+      ],
+      "Ice skating rink": [
+        "rink", "locker room", "ticket booth"
+      ],
+      "Chess club": [
+        "tables room", "tactical library", "reception"
+      ],
+      "Wrestling room": [
+        "ring area", "locker room", "reception"
+      ]
+    },
+    "offices_workshops": {
+      "Corporate office": [
+        "open space", "meeting room", "reception", "break room",
+        "CEO office", "server room", "bathroom", "archive"
+      ],
+      "Coworking space": [
+        "main floor", "meeting room", "kitchen", "reception"
+      ],
+      "Photography studio": [
+        "main set", "equipment storage", "editing room", "reception"
+      ],
+      "Podcast studio": [
+        "recording booth", "control room", "reception"
+      ],
+      "Music recording studio": [
+        "live room", "control room", "reception", "lounge"
+      ],
+      "Animation studio": [
+        "work room", "meeting room", "storage room"
+      ],
+      "Advertising agency": [
+        "creative open space", "presentation room", "kitchen"
+      ],
+      "Science laboratory": [
+        "experiment room", "reagent storage", "analysis room"
+      ],
+      "Carpentry workshop": [
+        "work floor", "wood storage", "finishing area"
+      ],
+      "Blacksmith forge": [
+        "forge area", "storage room", "cooling area"
+      ],
+      "Auto repair shop": [
+        "work pit", "parts storage", "reception"
+      ],
+      "Electronics workshop": [
+        "workbench area", "components storage", "testing area"
+      ],
+      "Notary office": [
+        "waiting room", "office", "archive"
+      ],
+      "Law firm": [
+        "waiting room", "office", "archive", "meeting room"
+      ],
+      "Detective agency": [
+        "main office", "archive", "surveillance room"
+      ],
+      "Handmade jewelry workshop": [
+        "workbench area", "materials storage", "display case"
+      ],
+      "Furniture restoration workshop": [
+        "work floor", "storage room", "finishing area"
+      ],
+      "Ceramics studio": [
+        "pottery wheel room", "kiln room", "storage room"
+      ],
+      "Taxidermy workshop": [
+        "work room", "storage room", "display room"
+      ],
+      "Watchmaking workshop": [
+        "workbench area", "parts storage", "counter"
+      ],
+      "Luthier workshop": [
+        "building room", "wood storage", "finishing room"
+      ],
+      "Hacker space": [
+        "server room", "workstation area", "dark monitor room"
+      ]
+    },
+    "lodging": {
+      "Hotel": [
+        "reception", "standard room", "suite", "kitchen", "restaurant",
+        "bar", "meeting room", "laundry room", "storage room", "gym"
+      ],
+      "Hostel": [
+        "shared dormitory", "shared bathroom", "common kitchen", "reception", "common room"
+      ],
+      "Bed and breakfast": [
+        "bedroom", "dining room", "kitchen", "common room"
+      ],
+      "Motel": [
+        "room", "reception"
+      ],
+      "Roadside inn": [
+        "main hall", "kitchen", "rustic bedroom", "cellar"
+      ]
+    },
+    "entertainment": {
+      "Cinema": [
+        "screening room", "concession stand", "lobby", "projection booth", "bathroom"
+      ],
+      "Theater": [
+        "stage", "dressing room", "prop storage", "auditorium", "reception"
+      ],
+      "Escape room": [
+        "themed room A", "themed room B", "reception", "control room"
+      ],
+      "Arcade": [
+        "main floor", "cashier", "storage room"
+      ],
+      "Casino": [
+        "table games floor", "slot machine room", "bar", "cashier", "storage room"
+      ],
+      "Concert hall": [
+        "stage", "backstage", "storage room", "bar", "reception"
+      ],
+      "Retro gaming room": [
+        "main floor", "cashier"
+      ],
+      "Live magic show room": [
+        "stage", "dressing room", "prop storage"
+      ],
+      "Puppet theater": [
+        "stage", "puppet workshop", "storage room"
+      ],
+      "Tabletop RPG room": [
+        "main table area", "rulebook library", "miniatures storage"
+      ],
+      "Karaoke room": [
+        "private room", "bar", "reception"
+      ],
+      "Virtual reality room": [
+        "play zone", "reception", "equipment room"
+      ]
+    },
+    "transport_infrastructure": {
+      "Train station": [
+        "waiting hall", "ticket booth", "covered platform", "bathroom", "cafe"
+      ],
+      "Airport terminal": [
+        "departure lounge", "duty free", "immigration hall", "VIP lounge"
+      ],
+      "Subway station": [
+        "platform", "ticket booth", "waiting area"
+      ],
+      "Fire station": [
+        "truck garage", "dormitory", "kitchen", "equipment room"
+      ],
+      "Police station": [
+        "reception", "jail cell", "detective room", "archive", "interrogation room"
+      ],
+      "Military barracks": [
+        "sleeping quarters", "armory", "kitchen", "strategy room", "storage room"
+      ],
+      "Lighthouse": [
+        "light room", "keeper bedroom", "kitchen"
+      ],
+      "Submarine": [
+        "control room", "sleeping quarters", "kitchen", "torpedo room", "engine room"
+      ],
+      "Train cabin": [
+        "driver cabin", "passenger wagon", "dining wagon"
+      ],
+      "Ship cabin": [
+        "bridge", "cabin", "engine room"
+      ],
+      "Aircraft hangar": [
+        "maintenance area", "technical office", "storage room"
+      ],
+      "Power plant": [
+        "control room", "generator room", "office"
+      ],
+      "Water treatment plant": [
+        "filter room", "control room", "lab"
+      ]
+    },
+    "fantasy_scifi": {
+      "Spaceship": [
+        "bridge", "engine room", "sleeping quarters",
+        "laboratory", "cryogenic chamber", "cargo bay"
+      ],
+      "Space station": [
+        "control center", "living module", "laboratory", "hangar"
+      ],
+      "Alchemy laboratory": [
+        "distillation room", "ingredients storage", "arcane library"
+      ],
+      "Dragon lair": [
+        "main cavern", "treasure hoard", "nest"
+      ],
+      "Witch house": [
+        "potion kitchen", "spell casting room", "dark basement", "herb greenhouse"
+      ],
+      "Wizard tower": [
+        "study room", "laboratory", "crystal ball chamber", "basement"
+      ],
+      "Vampire crypt": [
+        "coffin chamber", "blood storage", "dark throne room"
+      ],
+      "Dwarf cave": [
+        "forge", "mine shaft", "banquet hall", "gold storage"
+      ],
+      "Elven treehouse": [
+        "main room", "healing chamber", "arcane library"
+      ],
+      "Knight quarters": [
+        "armory", "training room", "dormitory", "map room"
+      ],
+      "Steampunk laboratory": [
+        "steam machine room", "invention workshop", "gear room"
+      ],
+      "Post-apocalyptic shelter": [
+        "main room", "supplies storage", "generator room", "infirmary"
+      ],
+      "Underwater base": [
+        "control center", "laboratory", "sleeping quarters", "supply room"
+      ],
+      "Forgotten god temple": [
+        "ritual chamber", "oracle room", "relic basement"
+      ],
+      "Magic prison": [
+        "crystal cell", "guard room", "magic interrogation room"
+      ],
+      "Underground market": [
+        "stall corridor", "storage room", "secret auction room"
+      ]
+    },
+    "covered_nature": {
+      "Greenhouse": [
+        "tropical zone", "cactus zone", "orchid zone", "work area"
+      ],
+      "Equipped cave": [
+        "main chamber", "stalactite zone", "underground lake", "camp area"
+      ],
+      "Nursery": [
+        "plant room", "seedling area", "storage room"
+      ],
+      "Indoor farm": [
+        "hydroponic grow room", "storage room", "packing room"
+      ],
+      "Crystal cave": [
+        "formation room", "narrow passage", "central chamber"
+      ],
+      "Covered animal habitat": [
+        "main enclosure", "veterinary area", "visitor area"
+      ]
+    },
+    "special_services": {
+      "Bank": [
+        "teller room", "vault", "waiting room", "manager office"
+      ],
+      "Post office": [
+        "sorting room", "counter", "package storage"
+      ],
+      "Auction house": [
+        "main auction room", "lot storage", "auctioneer office"
+      ],
+      "Newspaper printing house": [
+        "machine room", "newsroom", "storage room"
+      ],
+      "Explorer map room": [
+        "main room", "cartographic archive", "instrument workshop"
+      ],
+      "Prison": [
+        "cell block", "guard room", "covered yard", "dining hall"
+      ],
+      "Autopsy room": [
+        "work room", "archive", "sample storage"
+      ]
+    }
+  
+}

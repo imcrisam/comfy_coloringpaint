@@ -2,12 +2,22 @@ import json
 import random
 
 
-def pick_random(catalog: dict) -> dict:
-    """Pick a random category, location and sub_location from the catalog."""
-    category = random.choice(list(catalog.keys()))
-    location = random.choice(list(catalog[category].keys()))
-    sub_location = random.choice(catalog[category][location])
-    return {category: {location: [sub_location]}}
+def pick_random(catalog: dict, n: int = 1) -> dict:
+    """Pick n random entries and return them merged in a single catalog-shaped dict."""
+    result = {}
+    count = n
+    for _ in range(count):
+        category = random.choice(list(catalog.keys()))
+        location = random.choice(list(catalog[category].keys()))
+        sub_location = random.choice(catalog[category][location])
+        result.setdefault(category, {}).setdefault(location, [])
+        if sub_location in result[category][location]:
+            if count < 120:
+                count += 1
+            continue  # Already picked, try again
+        
+        result[category][location].append(sub_location)
+    return result
 
 
 def subtract(catalog: dict, used: dict) -> dict:
@@ -20,7 +30,6 @@ def subtract(catalog: dict, used: dict) -> dict:
             if leftover:
                 remaining.setdefault(category, {})[location] = leftover
     return remaining
-
 
 def add_used(used: dict, new: dict) -> dict:
     """Merge new picked entry into used dict and return the result."""
